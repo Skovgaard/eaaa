@@ -1,7 +1,7 @@
 package andebybank.ex3;
 
-import andebybank.ResultSetPrinter;
 import databaseconnection.ConnectionUrl;
+import resultsetprinter.ResultSetPrinter;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -28,6 +28,7 @@ public class ex3 {
             resultSet.absolute(2);
             System.out.println(resultSet.getInt(1) + "    " + resultSet.getString(2) + "    " + resultSet.getString(3) + "    " + resultSet.getString(4));
 
+            System.out.println(Integer.MAX_VALUE);
             //relative
             System.out.println("\nRelative(-1)");
             resultSet.relative(-1);

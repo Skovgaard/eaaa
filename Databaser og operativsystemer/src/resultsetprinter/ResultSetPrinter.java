@@ -1,4 +1,4 @@
-package andebybank;
+package resultsetprinter;
 
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;

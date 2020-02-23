@@ -1,6 +1,7 @@
 package andebybank.ex7;
 
 import databaseconnection.ConnectionUrl;
+import resultsetprinter.ResultSetPrinter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -28,7 +29,7 @@ public class ex7 {
             System.out.println("Indtast bit");
             byte bitTest = Byte.parseByte(bufferedReader.readLine());
 
-            String sql = "insert into TestType values (?,?,?,?,?,?)";
+            String sql = "insert into Testtype values (?,?,?,?,?,?)";
             PreparedStatement prestmt = connection.prepareStatement(sql);
             prestmt.clearParameters();
             prestmt.setString(1, charTest);
@@ -40,20 +41,28 @@ public class ex7 {
             prestmt.execute();
             System.out.println("TestType er nu tilføjet");
 
-            ResultSet resultSet = statement.executeQuery("select TestType.* from TestType");
-            resultSet.last();
+//            ResultSet resultSet = statement.executeQuery("select Testtype.* from Testtype");
+//            resultSet.last();
+//
+//            String charTestPrint = resultSet.getString(1);
+//            String varCharTestPrint = resultSet.getString(2);
+//            int intTestPrint = resultSet.getInt(3);
+//            double decimalTestPrint = resultSet.getDouble(4);
+//            String dateTimeTestPrint = resultSet.getString(5);
+//            byte bitTestPrint = resultSet.getByte(6);
+//
+////            Passer ikke, nyeste ikke tilføjet sidst
+//            System.out.println("Added:");
+//            System.out.println(charTestPrint + "    " + varCharTestPrint + "    "
+//                    + intTestPrint + "    " + decimalTestPrint + "    "
+//                    + dateTimeTestPrint + "    " + bitTestPrint);
 
-            String charTestPrint = resultSet.getString(1);
-            String varCharTestPrint = resultSet.getString(2);
-            int intTestPrint = resultSet.getInt(3);
-            double decimalTestPrint = resultSet.getDouble(4);
-            String dateTimeTestPrint = resultSet.getString(5);
-            byte bitTestPrint = resultSet.getByte(6);
+            System.out.println();
+            System.out.println("New table:");
+            ResultSet resultSet = statement.executeQuery("select Testtype.* from Testtype");
+            ResultSetPrinter.print(resultSet, 25);
 
-            System.out.println("\n" + charTestPrint + "    " + varCharTestPrint + "    "
-                    + intTestPrint + "    " + decimalTestPrint + "    "
-                    + dateTimeTestPrint + "    " + bitTestPrint);
-
+            resultSet.close();
 
         } catch (SQLException | IOException e) {
             e.printStackTrace();

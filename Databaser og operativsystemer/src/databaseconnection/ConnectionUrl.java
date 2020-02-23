@@ -10,8 +10,10 @@ import java.sql.DriverManager;
 
 public class ConnectionUrl {
 
+    private static String authPath = "src/databaseconnection/auth.xml";
+
     private static String getUser() throws Exception {
-        File file = new File("L05/src/databaseconnection/auth.xml");
+        File file = new File(authPath);
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
         Document document = documentBuilder.parse(file);
@@ -19,7 +21,7 @@ public class ConnectionUrl {
     }
 
     private static String getPass() throws Exception {
-        File file = new File("L05/src/databaseconnection/auth.xml");
+        File file = new File(authPath);
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
         Document document = documentBuilder.parse(file);
@@ -27,7 +29,7 @@ public class ConnectionUrl {
     }
 
     private static String getAddr() throws Exception {
-        File file = new File("L05/src/databaseconnection/auth.xml");
+        File file = new File(authPath);
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
         Document document = documentBuilder.parse(file);

@@ -1,6 +1,7 @@
 package andebybank.ex6;
 
 import databaseconnection.ConnectionUrl;
+import resultsetprinter.ResultSetPrinter;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -27,9 +28,12 @@ public class ex6 {
                 transaktioner.add(new Transaktion(regNr, ktoNr, dato, tekst, beløb));
             }
 
-            for (Transaktion t : transaktioner) {
-                System.out.println(t);
-            }
+            resultSet.first();
+            ResultSetPrinter.print(resultSet, 15);
+
+//            for (Transaktion t : transaktioner) {
+//                System.out.println(t);
+//            }
 
         } catch (SQLException e) {
             e.printStackTrace();

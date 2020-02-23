@@ -1,7 +1,7 @@
 package andebybank.ex4;
 
-import andebybank.ResultSetPrinter;
 import databaseconnection.ConnectionUrl;
+import resultsetprinter.ResultSetPrinter;
 
 import java.io.BufferedReader;
 import java.io.IOException;

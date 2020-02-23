@@ -65,6 +65,17 @@ public class Ex2Test {
         small = 3;
         big = 3;
         assertEquals(5500, ex2.totalPayment(small, big));
+
+        //TC:11
+        small = 1;
+        big = 3;
+        assertEquals(3500, ex2.totalPayment(small, big));
+
+        //TC:12
+        small = 3;
+        big = 1;
+        assertEquals(5250, ex2.totalPayment(small, big));
+
     }
 
 }

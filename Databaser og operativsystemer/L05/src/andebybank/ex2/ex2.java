@@ -1,7 +1,7 @@
 package andebybank.ex2;
 
-import andebybank.ResultSetPrinter;
 import databaseconnection.ConnectionUrl;
+import resultsetprinter.ResultSetPrinter;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
