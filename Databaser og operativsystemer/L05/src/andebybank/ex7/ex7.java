@@ -29,7 +29,7 @@ public class ex7 {
             System.out.println("Indtast bit");
             byte bitTest = Byte.parseByte(bufferedReader.readLine());
 
-            String sql = "insert into Testtype values (?,?,?,?,?,?)";
+            String sql = "INSERT INTO Testtype VALUES (?,?,?,?,?,?)";
             PreparedStatement prestmt = connection.prepareStatement(sql);
             prestmt.clearParameters();
             prestmt.setString(1, charTest);
@@ -59,7 +59,7 @@ public class ex7 {
 
             System.out.println();
             System.out.println("New table:");
-            ResultSet resultSet = statement.executeQuery("select Testtype.* from Testtype");
+            ResultSet resultSet = statement.executeQuery("SELECT Testtype.* FROM Testtype");
             ResultSetPrinter.print(resultSet, 25);
 
             resultSet.close();

@@ -136,18 +136,36 @@ BEGIN
     IF (@count > 3)
         BEGIN
             RAISERROR ('Kan ikke oprette konti for kunde med 3 i forvejen', 16, 10);
-            ROLLBACK
+            ROLLBACK TRANSACTION
         END
 END
+GO
+
+-- Endnu bedre
+CREATE TRIGGER NyKundeHarKonto
+    ON KundeHarKonto
+    AFTER INSERT
+    AS
+    IF (SELECT count(KundeHarKonto.cprNr)
+        FROM KundeHarKonto,
+             Inserted
+        WHERE KundeHarKonto.cprNr = Inserted.cprNr
+        GROUP BY KundeHarKonto.cprNr) > 3
+        BEGIN
+            RAISERROR ('Kan ikke oprette konti for kunde med 3 i forvejen', 16, 10);
+            ROLLBACK TRANSACTION
+        END
 GO
 
 -- skal man også slette kontoen?
 -- lidt underlig at lave uden at have en til at lave konto sammen med KundeHarKonto
 
+-- Til at fylde table så vi når op på count = 3
 INSERT INTO KundeHarKonto
     (cprNr, regNr, ktoNr)
 VALUES ('3112692132', 1234, 1231236);
 
+-- Skal give en fejl, da count = 3
 INSERT INTO KundeHarKonto
     (cprNr, regNr, ktoNr)
 VALUES ('3112692132', 1234, 1234567);
