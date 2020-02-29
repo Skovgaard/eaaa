@@ -6,6 +6,7 @@ public class NumberEvaluator implements Evaluator {
      */
     @Override
     public boolean isValid(String s) {
+        // Metode 1 med at prøve ved at parse til typer:
         try {
             Integer.parseInt(s);
             return true;
@@ -20,5 +21,9 @@ public class NumberEvaluator implements Evaluator {
 
         }
         return false;
+
+        // Metode 2 med regex (ikke færdig, mangler at tjekke for en del 0. og E, osv):
+//        return s.matches("[+-.]?\\d+(\\.\\d+)?");
+
     }
 }
