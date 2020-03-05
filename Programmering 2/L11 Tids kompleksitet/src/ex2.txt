@@ -1,0 +1,13 @@
+What is the time complexity (in big-Oh notation) of the method shown here?
+
+public int method(int n){
+    int result = 0;
+    for (int i = 0; i < n; i++){
+        for (int j = 1; j < n; j = j*2){
+            result++;
+        }
+    }
+    return result;
+}
+
+Answer: O(n * log(n))
