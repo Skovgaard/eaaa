@@ -25,4 +25,8 @@ public class MyTime implements Serializable {
     public void saveTime() {
         times.add(String.valueOf(time));
     }
+
+    public List<String> getTimes() {
+        return times;
+    }
 }

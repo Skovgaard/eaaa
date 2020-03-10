@@ -12,7 +12,7 @@ public class Rainfall {
         System.out.println("Time complexity = O(n)");
         System.out.println();
         System.out.println("sameRainfall: " + sameRainfall());
-        System.out.println("Time complexity = O(n^2)"); // Kan laves O(n)
+        System.out.println("Time complexity = O(n)"); // Kan laves O(n)
     }
 
     private static int[] weekly = {
@@ -83,6 +83,31 @@ public class Rainfall {
      * the longest period, where the rainfall has been exactly the same.
      */
     public static int sameRainfall() {
+        int week = 0;
+        int weeks = 1;
+
+        int count = 1;
+        int currentRainfall = weekly[0];
+        int currentStart = 0;
+
+        for (int i = 1; i < weekly.length - weeks; i++) {
+            if (weekly[i] == currentRainfall) {
+                count++;
+            } else {
+                currentStart = i;
+                currentRainfall = weekly[i];
+                count = 1;
+            }
+            if (count > weeks) {
+                week = currentStart;
+                weeks = count;
+            }
+        }
+        return week;
+    }
+
+    // Same but with O(n^2)
+    public static int sameRainfalln2() {
         int week = 0;
         int weeks = 0;
         for (int i = 0; i < weekly.length - weeks; i++) {

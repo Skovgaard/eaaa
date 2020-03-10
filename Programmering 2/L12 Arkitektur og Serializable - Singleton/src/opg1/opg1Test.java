@@ -6,18 +6,37 @@ public class opg1Test {
 
     public static void main(String[] args) {
 
+        System.out.println("Opg1:");
         MyTime myTime = new MyTime();
         myTime.increase();
+        System.out.println("Time increased");
         myTime.increase();
-        System.out.println(myTime.getTime());
+        System.out.println("Time increased");
 
         String path = "L12 Arkitektur og Serializable - Singleton/output/myTime.ser";
 
+        myTime.saveTime();
+        System.out.println("Time saved: " + myTime.getTime());
+        System.out.println("Saving time to file");
         writeToFile(path, myTime);
 
-        MyTime myTime2 = readFromFile(path);
-        if (myTime2 != null) {
-            System.out.println(myTime2.getTime());
+        System.out.println("Loading time from file");
+        myTime = readFromFile(path);
+        if (myTime != null) {
+            System.out.println("Time after save/load: " + myTime.getTime());
+            myTime.reset();
+            System.out.println("Time reset");
+            myTime.saveTime();
+            System.out.println("Time saved: " + myTime.getTime());
+        }
+
+        System.out.println("Saving time to file");
+        writeToFile(path, myTime);
+
+        System.out.println("Loading time from file");
+        myTime = readFromFile(path);
+        if (myTime != null) {
+            System.out.println("Times saved: " + myTime.getTimes());
         }
 
     }

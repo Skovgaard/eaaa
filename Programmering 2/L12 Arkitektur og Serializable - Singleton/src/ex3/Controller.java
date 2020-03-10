@@ -4,14 +4,26 @@ import java.util.List;
 
 public class Controller {
 
+    private static Controller controller;
+
     private static Storage storage;
 
-    public static void addPerson(Person person) {
-        Storage.addPerson(person);
+    public void addPerson(Person person) {
+        storage.addPerson(person);
     }
 
-    public static List<Person> getPersons() {
-        return Storage.getPersons();
+    public List<Person> getPersons() {
+        return storage.getPersons();
     }
 
+    public static void init() {
+        storage = Storage.getInstance();
+    }
+
+    public static Controller getInstance() {
+        if (controller == null) {
+            controller = new Controller();
+        }
+        return controller;
+    }
 }

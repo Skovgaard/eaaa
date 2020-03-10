@@ -138,15 +138,15 @@ public class Controller {
     }
 
     public static void init() {
-
         storage = Storage.getInstance();
 
-//        initStorage();
-
-//        saveToFile(PATH, storage);
+        /*
+        // Used to init before load
+        initStorage();
+        saveToFile(PATH, storage);
+         */
 
         readFromFile(PATH);
-
     }
 
     public static Storage getStorage() {

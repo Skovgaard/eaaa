@@ -29,8 +29,16 @@ public class MainApp extends Application {
         stage.show();
     }
 
+    @Override
+    public void init() {
+        Controller.init();
+        controller = Controller.getInstance();
+    }
+
     private TextField txfName = new TextField();
     private ListView<Person> lvwPersons = new ListView<>();
+
+    private Controller controller;
 
     private void initContent(GridPane pane) {
 
@@ -55,7 +63,7 @@ public class MainApp extends Application {
     private void addPerson() {
         String name = txfName.getText();
         Person person = new Person(name);
-        Controller.addPerson(person);
+        controller.addPerson(person);
         lvwPersons.getItems().add(person);
         txfName.clear();
     }

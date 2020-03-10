@@ -9,11 +9,11 @@ public class Storage {
 
     private static List<Person> persons = new LinkedList<>();
 
-    public static void addPerson(Person person) {
+    public void addPerson(Person person) {
         persons.add(person);
     }
 
-    public static List<Person> getPersons() {
+    public List<Person> getPersons() {
         return persons;
     }
 
