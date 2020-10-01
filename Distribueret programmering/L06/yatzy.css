@@ -1,0 +1,46 @@
+.border {
+    display: grid;
+    gap: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    margin: 5px;
+    width: 400px;
+}
+
+#dices {
+    grid-template-columns: auto auto auto auto auto;
+}
+
+#dices * {
+    margin: 10px;
+}
+
+.die {
+    grid-column: span 1;
+    width: 50px;
+    height: 50px;
+    outline: none;
+}
+
+#turn {
+    grid-column: span 4;
+}
+
+#results {
+    grid-template-columns: 125px auto auto auto auto auto;
+}
+
+input {
+    width: 40px;
+    grid-column: span 5;
+    outline: none;
+}
+
+#sixes, #sum, #total, #bonus, #total {
+    grid-column: span 1;
+}
+
+#yatzy {
+    grid-column: span 3;
+}

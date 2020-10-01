@@ -1,0 +1,33 @@
+<!-- Lav en XML-fil, der beskriver nogle personer med navn, alder 
+og evt. mobil samt en adresse. Adressen er underopdelt i gade og by. -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<personer>
+    <person>
+        <navn>Navn1</navn>
+        <alder>10</alder>
+        <mobilnummer>1111</mobilnummer>
+        <adresse>
+            <gade>Gade 1</gade>
+            <by>By 1</by>
+        </adresse>
+    </person>
+    <person>
+        <navn>Navn2</navn>
+        <alder>20</alder>
+        <mobilnummer>2222</mobilnummer>
+        <adresse>
+            <gade>Gade 2</gade>
+            <by>By 2</by>
+        </adresse>
+    </person>
+    <person>
+        <navn>Navn3</navn>
+        <alder>30</alder>
+        <mobilnummer>3333</mobilnummer>
+        <adresse>
+            <gade>Gade 3</gade>
+            <by>By 3</by>
+        </adresse>
+    </person>
+</personer>

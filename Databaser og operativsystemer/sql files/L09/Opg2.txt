@@ -1,0 +1,54 @@
+Opgave 2
+I en tidligere lektion har du skrevet SQL-queries til Banksystemet. Omskriv dem herunder til relationel algebra:
+
+1. Find alle kunder og udskriv deres navn, adresse, postnummer og bynavn.
+
+    π navn, adresse, postNr, byNavn(Kunde ⋈ PostDistrikt)
+
+2. Find navne på de, der har konto med saldo over 12.000 kr.
+
+    π navn (Kunde ⋈ (KundeHarKonto ⋈ (σ saldo > 12000 (Konto))))
+
+3. Find navne på de personer, der bor i ’Andeby’
+
+    π navn, byNavn (Kunde ⋈ (σ byNavn = ‘AndeBy’ (PostDistrikt))
+
+4. Find de postdistrikter, hvor der bor personer, der kar konto med saldo over
+    100.000 kr.
+
+    π postNr, byNavn (PostDistrikt ⋈ (Kunde ⋈ (KundeHarKonto ⋈ (σ saldo > 100000 (Konto)))))
+
+5. Find kontonumre for personer, der bor i ’Griseløse’
+
+    π ktoNr (KundeHarKonto ⋈ (Kunde ⋈ (σ byNavn = ‘Griseløse’ (PostDistrikt))))
+
+6. Find navne på kunder der har konti i en bestemt afdeling. Vælg selv hvilken
+    Afdeling.
+
+    π navn (Kunde ⋈ (σ regNr = ‘1234’  (KundeHarKonti)))
+
+7. Find navnene og afdeling på alle kunder, der har en prioritetskonto.
+
+    π navn, regNr(Kunde ⋈ ((π regNr, ktoNr (KundeHarKonto)) ∩ (π regNr, ktoNr (Prioritet))))
+
+8. Find navne på de kunder, der har et navn, hvor a indgår
+
+    π navn (σ name = ‘%a%’ (Kunde)
+
+9. Find kundeid og navn på de kunder, der har et navn, hvor bogstavet ’a’
+    indgår eller bor i et postdistrikt, hvor ’r’ indgår.
+
+    π cprNr, navn (σ name = ‘%a%’ ∨ byNavn = ‘%r%’  (Kunde ⋈ PostDistrikt))
+
+10. Find de kunder, der ikke har en lønkonto
+
+    π cprNr, navn, adresse, postNr (Kunde ⋈ ((π regNr, kontoNr (KundeHarKonto)) - (π regNr, kontoNr (Løn))))
+
+11. Find de postnumre, hvor der hverken bor kunder eller medarbejdere
+
+    π postNr ((π postNr (PostDistrikt)) - ((π postNr (Kunde)) ∪ (π postNr (Medarbejder))))
+
+
+Note:
+Brug G til at sortere så man ikke får duplikater? - Nej, undgår man i joins
+Taget fra docs på gdrive

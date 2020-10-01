@@ -9,12 +9,12 @@ SELECT Konto.regNr, Konto.ktoNr
 FROM Konto;
 
 -- 3: π afdnavn, regNr, ktoNr, saldo(Afdeling ⋈ Konto)
-SELECT Afdeling.navn, Afdeling.regNr, Konto.ktoNr
+SELECT Afdeling.navn, Afdeling.regNr, Konto.ktoNr, Konto.saldo
 FROM Afdeling,
      Konto
 WHERE Afdeling.regNr = Konto.ktoNr;
 
--- 4: π afdnavn, regNr, ktoNr, saldo(saldo>10000(Afdeling ⋈ Konto))
+-- 4: π afdnavn, regNr, ktoNr, saldo(σ saldo>10000(Afdeling ⋈ Konto))
 SELECT Afdeling.navn, Afdeling.regNr, Konto.ktoNr, Konto.saldo
 FROM Afdeling,
      Konto
