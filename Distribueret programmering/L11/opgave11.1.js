@@ -11,6 +11,7 @@ const userUrl = 'https://jsonplaceholder.typicode.com/users';
 // const userUrl = 'https://jsonplaceholder.typicode.com/users/11';
 // const userUrl = 'httpz://jsonplaceholder.typicode.com/users';
 
+// ASYNC
 async function get(url) {
     const respons = await fetch(url);
     if (respons.status !== 200) // OK
@@ -27,6 +28,7 @@ get(userUrl).then(
     fejl => console.log(fejl)
 );
 
+// PROMISE
 function getPromise(url) {
     return new Promise(function (resolve, reject) {
         return fetch(url).then(respons => {
@@ -48,3 +50,15 @@ getPromise(userUrl).then(
 );
 
 console.log("Efter begge");
+
+// Fra gennemgang - bruger stadig async?
+async function getGennemgang(userUrl) {
+    try {
+        const userInfo = await get(userUrl);
+        console.log(userInfo);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+getGennemgang(userUrl);
