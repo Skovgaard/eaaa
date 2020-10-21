@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatklient</title>
+    <link rel="stylesheet" href="opgave12.2.css">
+    <script src="opgave12.2.js" defer></script>
+</head>
+
+<body>
+    <label for="chatrum">Chatrum:</label>
+    <select name="chatrum" id="chatrum">
+
+    </select>
+    <div id="chatbox"></div>
+    <form name="message" onsubmit="return false">
+        <input type="text" name="navn" id="navn" placeholder="Navn" autocomplete="off">
+        <input type="text" name="tekst" id="tekst" placeholder="Tekst" autocomplete="off">
+        <input type="submit" name="submit" id="submit" value="Send">
+    </form>
+    <form name="delete" onsubmit="return false">
+        <input type="text" name="nr" id="nr" placeholder="Nr" autocomplete="off">
+        <input type="submit" name="delete" id="delete" value="Delete">
+    </form>
+</body>
+
+</html>
