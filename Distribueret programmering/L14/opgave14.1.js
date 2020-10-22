@@ -36,9 +36,9 @@ async function updateDatabase(data) {
     try {
 
         const maxTime = await getMaxTime();
-        data = data.filter(eq => eq.properties.time > maxTime);
+        const newData = data.filter(eq => eq.properties.time > maxTime);
 
-        await populateDatabase(data);
+        await populateDatabase(newData);
 
     } catch (error) {
         if (error.message === 'Database is empty')

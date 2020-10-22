@@ -21,8 +21,7 @@ const ChatBesked = mongoose.model('ChatBesked', chatBeskedSchema);
 
 // Creates 3 dummy messages if db is empty
 async function populateDatabase() {
-    const dbContent = await (ChatBesked.find().exec());
-    if (dbContent.length === 0) {
+    if (!await getDBLength()) { // if falsy (= 0)
         await ChatBesked.create({
             navn: 'navn1',
             rum: 'rum1',
@@ -44,13 +43,27 @@ async function populateDatabase() {
     }
 }
 
+async function getDBLength() {
+    return (await (ChatBesked.find().exec())).length;
+}
+
 async function getChatMessages() {
     return await ChatBesked.find().select('-_id -__v').exec();
 }
 
-// Gets message with highest nr and adds 1
+async function getChatMessagesInRoom(room) {
+    return await ChatBesked.find().select('-_id -__v').where('rum').eq(room).exec();
+}
+async function getRooms() {
+    return await ChatBesked.find().select('rum -_id').distinct('rum').exec();
+}
+
+// Gets message with highest nr and adds 1 if db is not empty
 async function getNextChatMessageNumber() {
-    return (await ChatBesked.findOne().sort('-nr').exec()).nr + 1;
+    if (! await getDBLength()) // if falsy (= 0)
+        return 0;
+    else
+        return (await ChatBesked.findOne().sort('-nr').exec()).nr + 1;
 }
 
 async function main() {
@@ -80,16 +93,11 @@ app.get('/beskeder', async (req, res) => {
 
 app.get('/beskeder/:rum', async (req, res) => {
     const rum = req.params.rum;
-    const chatBeskeder = await getChatMessages();
-    const rumChatBeskeder = chatBeskeder.filter(besked => besked.rum === rum);
-    res.send(rumChatBeskeder);
+    res.send(await getChatMessagesInRoom(rum));
 });
 
 app.get('/rum', async (req, res) => {
-    const chatBeskeder = await getChatMessages();
-    const chatrum = chatBeskeder.map(besked => besked.rum);
-    const chatrumNoDuplicates = chatrum.filter((item, index) => chatrum.indexOf(item) === index);
-    res.send(chatrumNoDuplicates);
+    res.send(await getRooms());
 });
 
 app.post('/besked', async (req, res) => {
@@ -106,8 +114,8 @@ app.post('/besked', async (req, res) => {
 
 app.delete('/besked/:nr', async (req, res) => {
     const nr = parseInt(req.params.nr);
-    const chatBesked = await ChatBesked.deleteOne().where('nr').equals(nr).exec();
-    if (chatBesked.deletedCount != 0)
+    const deleteInfo = await ChatBesked.deleteOne().where('nr').equals(nr).exec();
+    if (deleteInfo.deletedCount == 1)
         res.status(200).send({ resultat: 'Besked slettet!' });
     else
         res.status(404).send();
@@ -116,6 +124,7 @@ app.delete('/besked/:nr', async (req, res) => {
 // Opgave 14.3
 app.use(express.static(__dirname + '/opgave12.2 - Kasper')); // To automaticly load css and js
 
+// Kan bruge index.html
 app.get('/', async (req, res) => {
     res.sendFile(__dirname + '/opgave12.2 - Kasper/opgave12.2.html');
 });
