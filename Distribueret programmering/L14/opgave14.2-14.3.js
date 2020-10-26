@@ -43,6 +43,7 @@ async function populateDatabase() {
     }
 }
 
+// Bruge findFirst istedet for mere effiktiv?
 async function getDBLength() {
     return (await (ChatBesked.find().exec())).length;
 }
