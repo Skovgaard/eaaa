@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatklient session</title>
+  <link rel="stylesheet" href="chatclient.css">
+  <script src="chatclient.js" defer></script>
+</head>
+
+<body>
+  <h3>Velkommen {{navn}}!</h3>
+
+  <label for="chatrum">Chatrum:</label>
+  <select name="chatrum" id="chatrum">
+
+  </select>
+  <div id="chatbox">
+    <div id="chatboxMessages"></div>
+  </div>
+  <form name="message" onsubmit="return false">
+    <input type="hidden" name="navn" id="navn" placeholder="Navn" value="{{navn}}" autocomplete="off">
+    <input type="text" name="tekst" id="tekst" autocomplete="off">
+    <input type="submit" name="submit" id="submit" value="Send">
+  </form>
+  <form name="delete" onsubmit="return false">
+    <input type="text" name="nr" id="nr" placeholder="Nr" autocomplete="off">
+    <input type="submit" name="delete" id="delete" value="Delete">
+  </form>
+
+  <a href="/logout">Log ud</a>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+body {
+    font: 12px arial;
+    text-align: center;
+    padding: 25px; 
+}
+
+#chatbox {
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: -1px;
+    padding: 10px;
+    height: 274px;
+    width: 430px;
+    border: 1px solid #008CBA;
+    overflow: auto; 
+}
+
+#chatbox * {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    padding: 3px;
+}
+
+form, p {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0; 
+}
+
+#tekst { 
+    width: 421px;
+    border: 1px solid #008CBA;
+    margin: 0px;
+    padding: 0px;
+}
+
+#submit {
+    margin-left: -4px;
+    padding: 0px;
+    background-color: #008CBA; /* Green */
+    border: 1px solid #008CBA;
+    color: white;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#nr {
+    width: 50px;
+}
+
+a, h3 {
+    font-size: 16px;
+}
+
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
