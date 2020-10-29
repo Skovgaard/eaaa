@@ -1,4 +1,3 @@
-// index.js
 const navn = document.querySelector('#navn');
 const password = document.querySelector('#password');
 const login = document.querySelector('#login');

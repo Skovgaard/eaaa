@@ -46,5 +46,4 @@ function logout(req, res) {
 
 //
 
-// exports.app = app;
 module.exports = app; // test

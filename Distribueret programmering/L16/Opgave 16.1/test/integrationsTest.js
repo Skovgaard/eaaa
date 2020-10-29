@@ -1,4 +1,3 @@
-// integrationsTest.js
 require('should');
 const request = require('supertest');
 const app = require("../app");

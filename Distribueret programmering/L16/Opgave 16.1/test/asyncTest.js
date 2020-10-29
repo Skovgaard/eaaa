@@ -1,4 +1,3 @@
-// unitTest
 require('should');
 const controller = require('../controllers/controller');
 

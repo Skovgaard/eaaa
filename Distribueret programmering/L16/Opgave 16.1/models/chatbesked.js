@@ -1,4 +1,3 @@
-// Employee.js
 const mongoose = require('mongoose');
 
 const chatBeskedSchema = new mongoose.Schema({

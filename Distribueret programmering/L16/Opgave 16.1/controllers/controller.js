@@ -1,4 +1,3 @@
-// controller.js
 const mongoose = require('mongoose');
 const ChatBesked = require('../models/chatbesked');
 const config = require('../config');
