@@ -3,3 +3,5 @@
 out/
 auth.xml
 *.class
+node_modules/
+package-lock.json

@@ -27,7 +27,7 @@ app.get('/earthquakes', async (req, res) => {
         res.send(earthquakes);
     } catch (e) {
         if (typeof e.message === 'number')
-        res.sendStatus(e.message);
+            res.sendStatus(e.message);
         else {
             res.send(e.name + ": " + e.message);
         }

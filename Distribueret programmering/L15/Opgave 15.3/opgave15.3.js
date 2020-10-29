@@ -1,4 +1,5 @@
 // Modificer løsningen til Opgave 14.3, så kun brugere med et bestemt password kan logge ind på chatserveren.
+// FEJL: TJekker ikke for session på alle endpoints - kan løses ved routing (se evt. næste uges opg)
 
 // MONGODB / MONGOOSE
 const mongoose = require('mongoose');
@@ -124,8 +125,8 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/templates');
 
 const store = new MongoDBStore({
-    uri: url,
-    collection: 'mySessions'
+    uri: url, // MongoDB connection
+    collection: 'mySessions' // MongoDB collection
 });
 
 // Catch errors
@@ -136,7 +137,7 @@ store.on('error', function (error) {
 app.use(session({
     secret: 'hemmelig',
     cookie: {
-        maxAge: 1000 * 60 * 1 // 1000 ms * 60 = 10 min * 10 = 10 minutes
+        maxAge: 1000 * 60 * 10 // 1000 ms * 60 = 10 min * 10 = 10 minutes
     },
     store,
     resave: true,
