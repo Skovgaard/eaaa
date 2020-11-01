@@ -1,4 +1,4 @@
-package opg14;
+package opg16og17og18;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -37,6 +37,11 @@ public class testsql {
             Opdater tilkonto med den nye saldo
              */
 
+//            connection.setTransactionIsolation(Connection.TRANSACTION_REPEATABLE_READ); // OPGAVE 17
+//            connection.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE); // OPGAVE 17
+
+            connection.setAutoCommit(false); // OPGAVE 16
+
             Scanner scanner = new Scanner(System.in);
             // Indlæs frakonto fra bruger
             System.out.println("Indtast frakonto");
@@ -51,7 +56,7 @@ public class testsql {
 
             // Check at frakonto eksisterer og find saldoen
             int frakontoSaldo;
-            res = stmt.executeQuery("select * from konto where kontonr=" + frakonto);
+            res = stmt.executeQuery("select * from konto (UPDLOCK) where kontonr=" + frakonto); // OPGAVE 18
             if (res.next()) {
                 int kontonr = res.getInt(1);
                 frakontoSaldo = res.getInt(2);
@@ -67,7 +72,7 @@ public class testsql {
 
             // Check at tilkonto eksisterer og find saldoen
             int tilkontoSaldo;
-            res = stmt.executeQuery("select * from konto where kontonr=" + tilkonto);
+            res = stmt.executeQuery("select * from konto (UPDLOCK) where kontonr=" + tilkonto); // OPGAVE 18
             if (res.next()) {
                 int kontonr = res.getInt(1);
                 tilkontoSaldo = res.getInt(2);
@@ -82,11 +87,16 @@ public class testsql {
             int tilkontoNySaldi = tilkontoSaldo + beløb;
             System.out.println("Ny tilkonto saldo: " + tilkontoNySaldi);
 
+            System.out.println("Venter her"); // VENTER HER
+            scanner.nextLine();
+
             // Opdater frakonto med den nye saldo
             stmt.executeUpdate("update konto set saldo=" + frakontoNySaldi + " where kontonr=" + frakonto);
 
             // Opdater tilkonto med den nye saldo
             stmt.executeUpdate("update konto set saldo=" + tilkontoNySaldi + " where kontonr=" + tilkonto);
+
+            connection.commit(); // OPGAVE 16
 
             res = stmt.executeQuery("select * from konto");
             System.out.println("----------");
