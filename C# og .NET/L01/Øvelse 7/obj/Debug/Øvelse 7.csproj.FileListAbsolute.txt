@@ -1,0 +1,15 @@
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\bin\Debug\Øvelse 7.exe.config
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\bin\Debug\Øvelse 7.exe
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\bin\Debug\Øvelse 7.pdb
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\Øvelse 7.csprojAssemblyReference.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\MainWindow.g.cs
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\App.g.cs
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\Øvelse 7_MarkupCompile.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\Øvelse 7_MarkupCompile.lref
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\MainWindow.baml
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\Øvelse 7.g.resources
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\Øvelse_7.Properties.Resources.resources
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\Øvelse 7.csproj.GenerateResource.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\Øvelse 7.csproj.CoreCompileInputs.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\Øvelse 7.exe
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 7\obj\Debug\Øvelse 7.pdb

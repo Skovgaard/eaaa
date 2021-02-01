@@ -1,0 +1,7 @@
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 8\bin\Debug\Øvelse 8.exe.config
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 8\bin\Debug\Øvelse 8.exe
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 8\bin\Debug\Øvelse 8.pdb
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 8\obj\Debug\Øvelse 8.csprojAssemblyReference.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 8\obj\Debug\Øvelse 8.csproj.CoreCompileInputs.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 8\obj\Debug\Øvelse 8.exe
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 8\obj\Debug\Øvelse 8.pdb

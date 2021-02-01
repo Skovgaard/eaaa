@@ -1,7 +1,9 @@
-C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 4\bin\Debug\Øvelse 4.exe.config
-C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 4\bin\Debug\Øvelse 4.exe
-C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 4\bin\Debug\Øvelse 4.pdb
-C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 4\obj\Debug\Øvelse 4.csprojAssemblyReference.cache
-C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 4\obj\Debug\Øvelse 4.csproj.CoreCompileInputs.cache
-C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 4\obj\Debug\Øvelse 4.exe
-C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 4\obj\Debug\Øvelse 4.pdb
+C:/Users/Skovgaard/Dropbox/eaaa/Programmering/C# og .NET/L01/Øvelse 4/bin/Debug/Øvelse 4.exe.config
+C:/Users/Skovgaard/Dropbox/eaaa/Programmering/C# og .NET/L01/Øvelse 4/bin/Debug/Øvelse 4.exe
+C:/Users/Skovgaard/Dropbox/eaaa/Programmering/C# og .NET/L01/Øvelse 4/bin/Debug/Øvelse 4.pdb
+C:/Users/Skovgaard/Dropbox/eaaa/Programmering/C# og .NET/L01/Øvelse 4/obj/Debug/Øvelse 4.csprojAssemblyReference.cache
+C:/Users/Skovgaard/Dropbox/eaaa/Programmering/C# og .NET/L01/Øvelse 4/obj/Debug/Øvelse 4.csproj.CoreCompileInputs.cache
+C:/Users/Skovgaard/Dropbox/eaaa/Programmering/C# og .NET/L01/Øvelse 4/obj/Debug/Øvelse 4.exe
+C:/Users/Skovgaard/Dropbox/eaaa/Programmering/C# og .NET/L01/Øvelse 4/obj/Debug/Øvelse 4.pdb
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L01/Øvelse 4/obj/Debug/Øvelse 4.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L01/Øvelse 4/obj/Debug/Øvelse 4.pdb
