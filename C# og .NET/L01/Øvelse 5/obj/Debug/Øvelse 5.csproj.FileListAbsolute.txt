@@ -1,0 +1,6 @@
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 5\bin\Debug\Øvelse 5.exe.config
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 5\bin\Debug\Øvelse 5.exe
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 5\bin\Debug\Øvelse 5.pdb
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 5\obj\Debug\Øvelse 5.csproj.CoreCompileInputs.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 5\obj\Debug\Øvelse 5.exe
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L01\Øvelse 5\obj\Debug\Øvelse 5.pdb

