@@ -1,0 +1,6 @@
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/L02/bin/Debug/L02.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/L02/bin/Debug/L02.pdb
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/L02/obj/Debug/L02.csprojAssemblyReference.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/L02/obj/Debug/L02.csproj.CoreCompileInputs.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/L02/obj/Debug/L02.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/L02/obj/Debug/L02.pdb

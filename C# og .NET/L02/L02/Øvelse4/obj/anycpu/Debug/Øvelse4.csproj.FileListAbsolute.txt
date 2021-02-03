@@ -1,0 +1,5 @@
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/Øvelse4/bin/Debug/Øvelse4.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/Øvelse4/bin/Debug/Øvelse4.pdb
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/Øvelse4/obj/anycpu/Debug/Øvelse4.csproj.CoreCompileInputs.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/Øvelse4/obj/anycpu/Debug/Øvelse4.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L02/L02/Øvelse4/obj/anycpu/Debug/Øvelse4.pdb

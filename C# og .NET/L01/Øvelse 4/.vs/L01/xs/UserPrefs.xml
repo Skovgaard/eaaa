@@ -1,10 +1,28 @@
-﻿<Properties StartupConfiguration="{A5B62711-EF90-43C5-85D3-55266A5A4A33}|Default">
+﻿<Properties StartupConfiguration="{94255902-70C6-4F7B-BF15-CDC9E14EC9AD}|Default">
+  <MonoDevelop.Ide.ItemProperties.Øvelse_2205 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Øvelse_2204 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Øvelse 8/Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="17" Column="2" />
+      <File FileName="../Øvelse 5/Program.cs" Line="1" Column="1" />
+      <File FileName="../Øvelse 8/Program.cs" Line="40" Column="14" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="L01" expanded="True">
+            <Node name="Øvelse 4" expanded="True" />
+            <Node name="Øvelse 5" expanded="True" />
+            <Node name="Øvelse 7" expanded="True" />
+            <Node name="Øvelse 8" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Øvelse_2208 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
