@@ -1,0 +1,7 @@
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse13/bin/Debug/ConsoleApp_Files_and_Strings.exe.config
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse13/bin/Debug/ConsoleApp_Files_and_Strings.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse13/bin/Debug/ConsoleApp_Files_and_Strings.pdb
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse13/obj/Debug/Øvelse13.csprojAssemblyReference.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse13/obj/Debug/Øvelse13.csproj.CoreCompileInputs.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse13/obj/Debug/ConsoleApp_Files_and_Strings.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse13/obj/Debug/ConsoleApp_Files_and_Strings.pdb

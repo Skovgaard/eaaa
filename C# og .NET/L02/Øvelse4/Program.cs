@@ -30,13 +30,13 @@ namespace Øvelse4
                     break;
                 }
                 int age;
-                calcAge(ref birthYear, out age);
+                calcAge(in birthYear, out age);
                 Console.WriteLine($"Alder: {age}");
             }
             
         }
 
-        public static void calcAge(ref int birthYear, out int age)
+        public static void calcAge(in int birthYear, out int age)
         {
             age = DateTime.Now.Year - birthYear;
         }

@@ -1,0 +1,6 @@
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse8/bin/Debug/Øvelse8.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse8/bin/Debug/Øvelse8.pdb
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse8/obj/anycpu/Debug/Øvelse8.csproj.CoreCompileInputs.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse8/obj/anycpu/Debug/Øvelse8.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse8/obj/anycpu/Debug/Øvelse8.pdb
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/Øvelse8/obj/anycpu/Debug/Øvelse8.csprojAssemblyReference.cache

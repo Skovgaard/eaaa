@@ -1,0 +1,6 @@
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/L03/bin/Debug/L03.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/L03/bin/Debug/L03.pdb
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/L03/obj/Debug/L03.csprojAssemblyReference.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/L03/obj/Debug/L03.csproj.CoreCompileInputs.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/L03/obj/Debug/L03.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L03/L03/L03/obj/Debug/L03.pdb

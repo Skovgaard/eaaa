@@ -1,0 +1,22 @@
+.main {
+  background-color: white;
+  color: red;
+  text-align: center;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.header {
+  background-color: blue;
+  height: 20vh;
+}
+
+.footer {
+  background-color: blue;
+  height: 20vh;
+}
