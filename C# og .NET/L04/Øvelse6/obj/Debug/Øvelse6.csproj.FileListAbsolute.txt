@@ -1,0 +1,6 @@
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L04/Øvelse6/bin/Debug/Øvelse6.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L04/Øvelse6/bin/Debug/Øvelse6.pdb
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L04/Øvelse6/obj/Debug/Øvelse6.csprojAssemblyReference.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L04/Øvelse6/obj/Debug/Øvelse6.csproj.CoreCompileInputs.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L04/Øvelse6/obj/Debug/Øvelse6.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L04/Øvelse6/obj/Debug/Øvelse6.pdb
