@@ -1,0 +1,9 @@
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L05/Øvelse13/bin/Debug/Øvelse13.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L05/Øvelse13/bin/Debug/Øvelse13.pdb
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L05/Øvelse13/bin/Debug/Øvelse1.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L05/Øvelse13/bin/Debug/Øvelse1.pdb
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L05/Øvelse13/obj/Debug/Øvelse13.csprojAssemblyReference.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L05/Øvelse13/obj/Debug/Øvelse13.csproj.CoreCompileInputs.cache
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L05/Øvelse13/obj/Debug/Øvelse13.csproj.CopyComplete
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L05/Øvelse13/obj/Debug/Øvelse13.exe
+/Users/skov/Dropbox/eaaa/Programmering/C# og .NET/L05/Øvelse13/obj/Debug/Øvelse13.pdb
