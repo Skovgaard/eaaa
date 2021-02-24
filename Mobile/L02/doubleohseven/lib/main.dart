@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'stateController.dart';
 import 'agent.dart';
+import 'package:date_time_picker/date_time_picker.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,7 +31,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('077 agents'),
+        title: Text('007 agents'),
       ),
       body: ListView.separated(
         padding: const EdgeInsets.all(8),
@@ -65,8 +66,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _NavigateToNewBond() async {
-    await Navigator.pushNamed(context, '/add');
-    setState(() {}); // Update
+    var result = await Navigator.pushNamed(context, '/add');
+    if (result != null) {
+      agents.add(result);
+      setState(() {}); // Update
+    }
   }
 }
 
@@ -135,61 +139,111 @@ class AddNewBondPage extends StatefulWidget {
 }
 
 class _AddNewBondPageState extends State<AddNewBondPage> {
-  final nameController = TextEditingController();
-  final activePeriodController = TextEditingController();
-  final numberOfFilmsController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
 
-  @override
-  void dispose() {
-    // Clean up the controller when the widget is disposed.
-    nameController.dispose();
-    activePeriodController.dispose();
-    numberOfFilmsController.dispose();
-    super.dispose();
-  }
+  String _name = "";
+  bool _favorite = false;
+  String _startDate;
+  String _endDate;
+  int _numberOfFilms = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Adding new bond')),
+      appBar: AppBar(
+        title: Text('Adding new bond'),
+        actions: <Widget>[
+          new IconButton(
+            icon: const Icon(Icons.save),
+            onPressed: () {
+              final form = _formKey.currentState;
+              if (form.validate()) {
+                form.save();
+
+                Navigator.pop(
+                  context,
+                  new Agent(
+                      name: _name,
+                      imageName: 'daniel_craig.png',
+                      activePeriod: _startDate.split('-')[0] +
+                          '-' +
+                          _endDate.split('-')[0],
+                      numberOfFilms: _numberOfFilms,
+                      favorite: _favorite),
+                );
+              }
+            },
+          )
+        ],
+      ),
       body: Form(
-          child: Container(
-        // EdgeInsets.only(top:50),
-        child: ListView(
-          padding: const EdgeInsets.all(8.0),
-          children: [
-            TextFormField(
-              controller: nameController,
-              decoration: const InputDecoration(labelText: 'Name (string)'),
+          key: _formKey,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: <Widget>[
+                TextFormField(
+                  decoration: InputDecoration(labelText: 'Name'),
+                  onSaved: (val) => setState(() => _name = val),
+                  validator: (value) {
+                    if (value.isEmpty) {
+                      return 'Please enter some text';
+                    }
+                    return null;
+                  },
+                ),
+                SwitchListTile(
+                  title: const Text('Favorite'),
+                  value: _favorite,
+                  onChanged: (bool val) => setState(() => _favorite = val),
+                ),
+                DateTimePicker(
+                  type: DateTimePickerType.date,
+                  initialValue: '',
+                  firstDate: DateTime(1950),
+                  lastDate: DateTime(2100),
+                  icon: Icon(Icons.event),
+                  dateLabelText: 'Start of active period',
+                  onChanged: (val) => setState(() => _startDate = val),
+                  validator: (val) {
+                    if (val.isEmpty) {
+                      return 'Please enter some text';
+                    }
+                    return null;
+                  },
+                  onSaved: (val) => setState(() => _startDate = val),
+                ),
+                DateTimePicker(
+                  type: DateTimePickerType.date,
+                  initialValue: '',
+                  firstDate: DateTime(1950),
+                  lastDate: DateTime(2100),
+                  icon: Icon(Icons.event),
+                  dateLabelText: 'End of active period',
+                  onChanged: (val) => setState(() => _endDate = val),
+                  validator: (val) {
+                    if (val.isEmpty) {
+                      return 'Please enter some text';
+                    }
+                    return null;
+                  },
+                  onSaved: (val) => setState(() => _endDate = val),
+                ),
+                TextFormField(
+                  decoration: InputDecoration(labelText: 'Number of films'),
+                  onSaved: (val) =>
+                      setState(() => _numberOfFilms = int.parse(val)),
+                  validator: (value) {
+                    if (value.isEmpty) {
+                      return 'Please enter some number';
+                    }
+                    return null;
+                  },
+                ),
+              ],
             ),
-            TextFormField(
-              controller: activePeriodController,
-              decoration:
-                  const InputDecoration(labelText: 'Years active (string)'),
-            ),
-            TextFormField(
-              controller: numberOfFilmsController,
-              decoration:
-                  const InputDecoration(labelText: 'Number of films (int)'),
-            ),
-            ElevatedButton(
-              onPressed: () => submitNew(),
-              child: Text('Submit'),
-            ),
-          ],
-        ),
-      )),
+          )),
     );
-  }
-
-  void submitNew() {
-    addAgent(Agent(
-        name: nameController.text,
-        imageName: 'daniel_craig.png', // default;
-        activePeriod: activePeriodController.text,
-        numberOfFilms: int.parse(numberOfFilmsController.text)));
-
-    Navigator.pop(context);
   }
 }
 

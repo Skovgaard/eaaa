@@ -1,0 +1,32 @@
+﻿<Window x:Class="Øvelse5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Øvelse5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="399" VerticalAlignment="Top" Width="772" Margin="10,10,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Menu >
+                <MenuItem Header="File">
+                    <MenuItem Header="Open" Click="MenuItem_Clicked"/>
+                    <MenuItem Header="Save as..." Click="MenuItem_Clicked"></MenuItem>
+                    <MenuItem Header="Exit" Click="MenuItem_Clicked"></MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="Help">
+                    <MenuItem Header="About" Click="MenuItem_Clicked"></MenuItem>
+                </MenuItem>
+            </Menu>
+            <StatusBar HorizontalAlignment="Left" Height="199" VerticalAlignment="Top" Width="772" Grid.Row="1">
+                <TextBlock TextWrapping="Wrap" Text="TextBlock" x:Name="statusbarText"/>
+            </StatusBar>
+        </Grid>
+
+    </Grid>
+</Window>

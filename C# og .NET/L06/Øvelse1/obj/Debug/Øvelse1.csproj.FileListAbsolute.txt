@@ -1,0 +1,15 @@
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\bin\Debug\Øvelse1.exe.config
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\bin\Debug\Øvelse1.exe
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\bin\Debug\Øvelse1.pdb
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\Øvelse1.csprojAssemblyReference.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\MainWindow.g.cs
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\App.g.cs
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\Øvelse1_MarkupCompile.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\Øvelse1_MarkupCompile.lref
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\MainWindow.baml
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\Øvelse1.g.resources
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\Øvelse1.Properties.Resources.resources
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\Øvelse1.csproj.GenerateResource.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\Øvelse1.csproj.CoreCompileInputs.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\Øvelse1.exe
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L06\Øvelse1\obj\Debug\Øvelse1.pdb

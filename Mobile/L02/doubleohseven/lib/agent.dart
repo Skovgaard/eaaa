@@ -7,7 +7,12 @@ class Agent {
   final int numberOfFilms;
   bool favorite = false;
 
-  Agent({this.name, this.imageName, this.activePeriod, this.numberOfFilms});
+  Agent(
+      {this.name,
+      this.imageName,
+      this.activePeriod,
+      this.numberOfFilms,
+      this.favorite});
 
   Image getImage() {
     return Image.asset('assets/' + imageName);

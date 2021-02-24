@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./components/header/Header"
-import Footer from "./components/footer/Footer"
+import Header from "./components/footer/Footer"
+import Footer from "./components/header/Header"
 
 class App3 extends React.Component {
     render() {
@@ -11,8 +11,8 @@ class App3 extends React.Component {
                 <div className="mid">
                     <h1>Hello World</h1>
                 </div>
-                {/* <div className="footer">Footer</div> */}
                 <Footer />
+                {/* <div className="footer">Footer</div> */}
             </div>
         )
     }
