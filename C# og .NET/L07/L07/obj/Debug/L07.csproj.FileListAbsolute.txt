@@ -1,0 +1,15 @@
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\bin\Debug\L07.exe.config
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\bin\Debug\L07.exe
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\bin\Debug\L07.pdb
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\L07.csprojAssemblyReference.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\MainWindow.g.cs
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\App.g.cs
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\L07_MarkupCompile.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\L07_MarkupCompile.lref
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\MainWindow.baml
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\L07.g.resources
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\L07.Properties.Resources.resources
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\L07.csproj.GenerateResource.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\L07.csproj.CoreCompileInputs.cache
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\L07.exe
+C:\Users\Skovgaard\Dropbox\eaaa\Programmering\C# og .NET\L07\L07\obj\Debug\L07.pdb
